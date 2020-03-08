@@ -11,7 +11,18 @@
 		C4202F6B241511F30024A764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4202F6A241511F30024A764 /* Assets.xcassets */; };
 		C4202F6E241511F30024A764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4202F6C241511F30024A764 /* LaunchScreen.storyboard */; };
 		C4258C41241518EC00245F5F /* ApplicationFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4258C40241518EC00245F5F /* ApplicationFlowController.swift */; };
+		C4258C5524151AC000245F5F /* ApplicationFlowControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4258C5424151AC000245F5F /* ApplicationFlowControllerSpec.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4258C4D24151AA500245F5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4202F56241511F10024A764 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4202F5D241511F10024A764;
+			remoteInfo = GifBrowser;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C4202F5E241511F10024A764 /* GifBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,10 +31,21 @@
 		C4202F6D241511F30024A764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4202F6F241511F30024A764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4258C40241518EC00245F5F /* ApplicationFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFlowController.swift; sourceTree = "<group>"; };
+		C4258C4824151AA500245F5F /* GifBrowserUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifBrowserUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4258C4C24151AA500245F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4258C5324151AC000245F5F /* GifBrowserUnitTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GifBrowserUnitTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		C4258C5424151AC000245F5F /* ApplicationFlowControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFlowControllerSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C4202F5B241511F10024A764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4258C4524151AA500245F5F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				C4202F60241511F10024A764 /* GifBrowser */,
+				C4258C4924151AA500245F5F /* GifBrowserUnitTests */,
 				C4202F5F241511F10024A764 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				C4202F5E241511F10024A764 /* GifBrowser.app */,
+				C4258C4824151AA500245F5F /* GifBrowserUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +133,24 @@
 			path = Details;
 			sourceTree = "<group>";
 		};
+		C4258C4924151AA500245F5F /* GifBrowserUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4258C5224151AB000245F5F /* FlowController */,
+				C4258C4C24151AA500245F5F /* Info.plist */,
+				C4258C5324151AC000245F5F /* GifBrowserUnitTests-Bridging-Header.h */,
+			);
+			path = GifBrowserUnitTests;
+			sourceTree = "<group>";
+		};
+		C4258C5224151AB000245F5F /* FlowController */ = {
+			isa = PBXGroup;
+			children = (
+				C4258C5424151AC000245F5F /* ApplicationFlowControllerSpec.swift */,
+			);
+			path = FlowController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -130,6 +172,24 @@
 			productReference = C4202F5E241511F10024A764 /* GifBrowser.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C4258C4724151AA500245F5F /* GifBrowserUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4258C4F24151AA500245F5F /* Build configuration list for PBXNativeTarget "GifBrowserUnitTests" */;
+			buildPhases = (
+				C4258C4424151AA500245F5F /* Sources */,
+				C4258C4524151AA500245F5F /* Frameworks */,
+				C4258C4624151AA500245F5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4258C4E24151AA500245F5F /* PBXTargetDependency */,
+			);
+			name = GifBrowserUnitTests;
+			productName = GifBrowserUnitTests;
+			productReference = C4258C4824151AA500245F5F /* GifBrowserUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -142,6 +202,11 @@
 				TargetAttributes = {
 					C4202F5D241511F10024A764 = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					C4258C4724151AA500245F5F = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+						TestTargetID = C4202F5D241511F10024A764;
 					};
 				};
 			};
@@ -159,6 +224,7 @@
 			projectRoot = "";
 			targets = (
 				C4202F5D241511F10024A764 /* GifBrowser */,
+				C4258C4724151AA500245F5F /* GifBrowserUnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -170,6 +236,13 @@
 			files = (
 				C4202F6E241511F30024A764 /* LaunchScreen.storyboard in Resources */,
 				C4202F6B241511F30024A764 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4258C4624151AA500245F5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +279,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C4258C4424151AA500245F5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4258C5524151AC000245F5F /* ApplicationFlowControllerSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4258C4E24151AA500245F5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4202F5D241511F10024A764 /* GifBrowser */;
+			targetProxy = C4258C4D24151AA500245F5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C4202F6C241511F30024A764 /* LaunchScreen.storyboard */ = {
@@ -370,6 +459,49 @@
 			};
 			name = Release;
 		};
+		C4258C5024151AA500245F5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GifBrowserUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gmanc.GifBrowserUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GifBrowserUnitTests/FlowController/GifBrowserUnitTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GifBrowser.app/GifBrowser";
+			};
+			name = Debug;
+		};
+		C4258C5124151AA500245F5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GifBrowserUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gmanc.GifBrowserUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GifBrowserUnitTests/FlowController/GifBrowserUnitTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GifBrowser.app/GifBrowser";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -387,6 +519,15 @@
 			buildConfigurations = (
 				C4202F73241511F30024A764 /* Debug */,
 				C4202F74241511F30024A764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4258C4F24151AA500245F5F /* Build configuration list for PBXNativeTarget "GifBrowserUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4258C5024151AA500245F5F /* Debug */,
+				C4258C5124151AA500245F5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
