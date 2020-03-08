@@ -1,0 +1,5 @@
+github "uber/ios-snapshot-test-case"
+github "Quick/Quick" 
+github "Quick/Nimble"
+github "ashfurrow/Nimble-Snapshots"
+github "AliSoftware/OHHTTPStubs"

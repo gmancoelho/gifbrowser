@@ -1,0 +1,32 @@
+excluded:
+    - vendor
+    - Carthage
+    - Modules
+
+disabled_rules: 
+    - switch_case_alignment
+
+line_length: 175
+type_name:
+  min_length: 4 # only warning
+  max_length: # warning and error
+    warning: 60
+    error: 70
+identifier_name:
+  min_length: 4
+  max_length: 65
+  excluded: # excluded via string array
+    - id
+    - URL
+    - url
+    - tap
+    - bff
+    - raw
+    - _self
+    - cpf
+    - top
+    - get
+    - put
+    - key
+    - GET
+    - PUT
